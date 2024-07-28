@@ -1,4 +1,4 @@
-import { Bird, Settings2Icon, User2Icon, VerifiedIcon } from "lucide-react";
+import { Bird, MessageCircleQuestionIcon, Settings2Icon, User2Icon, VerifiedIcon } from "lucide-react";
 import Navigation from "../Navigation";
 
 const Header = () => {
@@ -12,8 +12,9 @@ const Header = () => {
                 </div>
                 <div className="flex items-center justify-center gap-x-6">
                     <div style={{ border: '1px solid grey', borderRadius: '5px' }} className="p-2 flex gap-x-1 items-center justify-center">
+                        <MessageCircleQuestionIcon />
                         <p>Help Desk</p>
-                        <span className="bg-[#EAF7EC] p-1 text-[#2FB344]">Online</span>
+                        <span style={{borderRadius:'5px'}} className="bg-[#EAF7EC] p-1 text-[#2FB344]">Online</span>
                     </div>
 
                     <div className="flex items-center justify-center gap-x-2">
