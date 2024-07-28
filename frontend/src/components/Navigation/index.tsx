@@ -26,10 +26,13 @@ const Navigation = () => {
                 </div>
             </Link>
 
-            <div className="flex gap-x-2">
-                <HistoryIcon style={{ color: 'grey' }} />
-                <p>Payment History</p>
-            </div>
+            <Link href='/payment-history'>
+
+                <div className="flex gap-x-2">
+                    <HistoryIcon style={{ color: 'grey' }} />
+                    <p>Payment History</p>
+                </div>
+            </Link>
 
             <div className="flex gap-x-2">
                 <LucideGroup style={{ color: 'grey' }} />
