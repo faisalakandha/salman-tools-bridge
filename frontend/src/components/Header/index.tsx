@@ -1,5 +1,4 @@
 import { Bird, MessageCircleQuestionIcon, Settings2Icon, User2Icon, VerifiedIcon } from "lucide-react";
-import Navigation from "../Navigation";
 
 const Header = () => {
 

@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import HeaderMobile from "@/components/HeaderMobile";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,15 +21,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header style={{borderBottom:'1px solid grey'}} className='hidden md:block sticky top-0 z-50 bg-white'>
+        <header style={{ borderBottom: '1px solid grey' }} className='hidden md:block sticky top-0 z-50 bg-white'>
           <Header />
         </header>
+
+        <header style={{ borderBottom: '1px solid grey' }} className='md:hidden sticky top-0 z-50 bg-white'>
+          <HeaderMobile />
+        </header>
+
         <Navigation />
-        <div className="px-16 bg-[#F1F5F9] h-screen">
+        <div className="lg:px-16 bg-[#F1F5F9]">
           {children}
         </div>
 
-        <Footer />
+          <Footer />
+
       </body>
     </html>
   );
