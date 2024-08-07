@@ -4,7 +4,7 @@ const AccountOverview = () => {
 
 
     return (
-        <div className="grid grid-cols-3 gap-x-3">
+        <div className="flex flex-col md:flex-row gap-x-3">
             <div style={{ borderRadius: '5px' }} className="bg-white w-full h-[80px] flex gap-x-4 flex items-center px-8">
                 <KeySquareIcon style={{ borderRadius: '5px' }} size={50} className="bg-blue-600 p-2 text-white" />
 
