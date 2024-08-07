@@ -29,12 +29,15 @@ export default function RootLayout({
           <HeaderMobile />
         </header>
 
-        <Navigation />
+        <div className="hidden md:block">
+          <Navigation />
+        </div>
+
         <div className="lg:px-16 bg-[#F1F5F9]">
           {children}
         </div>
 
-          <Footer />
+        <Footer />
 
       </body>
     </html>

@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navigation = () => {
 
     return (
-        <div style={{ borderBottom: '1px solid grey' }} className="min-h-[50px] md:block hidden px-24 flex items-center gap-x-8">
+        <div style={{ borderBottom: '1px solid grey' }} className="min-h-[50px] px-24 flex items-center gap-x-8">
             <Link href='/'>
                 <div className="flex gap-x-2">
                     <HomeIcon style={{ color: 'grey' }} />
